@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <style>
+            .toolbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 5px 20px;
+            }
+
+            .products {
+                display: flex;
+                justify-content: center;
+                background-color: beige;
+            }
+            .product {
+                width: 300px;
+                border: 2px solid greenyellow;
+                margin: 10px;
+                padding: 10px;
+                background-color: aliceblue;
+            }
+
+            .added {
+                color: white;
+                background-color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="toolbar">
+            <h1 class="brand">Puppies For Adopt</h1>
+            <p>
+                <a href="cart.html">
+                    Cart items:
+                    <span id="count">0</span>, Price:
+                    <span id="sum">0</span>
+                </a>
+            </p>
+        </div>
+
+        <div class="products">
+            <div class="product">
+                <img src ="labrador.jpg" alt="cat1" height="160" width="150">
+                <h3>Labrador</h3>
+                <p>Price: 12000</p>
+                <button data-id="1" data-price="12000" data-title="Labrador">Add to cart</button>
+            </div>
+
+            <div class="product">
+                <img src ="shitzu.jpg" alt="cat1" height="160" width="150">
+                <h3>Shi-Tzu</h3>
+                <p>Price: 13000</p>
+                <button data-id="2" data-price="13000" data-title="Shi-Tzu">Add to cart</button>
+            </div>
+
+            <div class="product">
+                <img src ="goldenretriever.jpg" alt="cat1" height="160" width="150">
+                <h3>Golden Retriever</h3>
+                <p>Price: 16000</p>
+                <button data-id="3" data-price="16000" data-title="Golden Retriever">Add to cart</button>
+            </div>
+
+            <div class="product">
+                <img src ="siberianhusky.jpg" alt="cat1" height="160" width="150">
+                <h3>Siberian Husky</h3>
+                <p>Price: 10000</p>
+                <button data-id="4" data-price="10000" data-title="Siberian Husky">Add to cart</button>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
